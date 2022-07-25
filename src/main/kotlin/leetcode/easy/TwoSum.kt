@@ -1,5 +1,8 @@
 package leetcode.easy
 
+import java.util.*
+
+
 class TwoSum {
     /*
     *   where : LeetCode (https://leetcode.com/problems/two-sum/)
@@ -47,4 +50,28 @@ class TwoSum {
         }
         throw IllegalArgumentException("No two sum solution") // target을 만들 수 없을 경우
     }
+
+
+//    object easy1_TwoSum {
+//        @JvmStatic
+//        fun main(args: Array<String>) {
+//            val nums = intArrayOf(2, 7, 11, 15)
+//            val target = 9
+//            val result = twoSum(nums, target)
+//            print(Arrays.toString(result))
+//        }
+//
+//        fun twoSum(nums: IntArray, target: Int): IntArray {
+//            val valueMap = HashMap<Int, Int?>()
+//            for (i in nums.indices) {
+//                val searchValue = target - nums[i]
+//                if (valueMap[searchValue] != null) {
+//                    return intArrayOf(valueMap[searchValue] as Int, i)
+//                } else {
+//                    valueMap[nums[i]] = i
+//                }
+//            }
+//            return intArrayOf(1, 2)
+//        }
+//    }
 }
