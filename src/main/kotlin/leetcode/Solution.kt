@@ -1,9 +1,6 @@
 package leetcode
 
-import leetcode.easy.MergeTwoSortedLists
-import leetcode.easy.SearchInsertPosition
-import leetcode.easy.TwoSum
-import leetcode.easy.ValidParentheses
+import leetcode.easy.*
 
 
 class Solution {
@@ -17,7 +14,11 @@ class Solution {
 //        // mergeTwoLists
 //        val res = MergeTwoSortedLists().mergeTwoLists()
 
-        val res = SearchInsertPosition().searchInsert(intArrayOf(2,7,11,15), 7)
+//        // SearchInsertPosition
+//        val res = SearchInsertPosition().searchInsert(intArrayOf(2,7,11,15), 7)
+
+        // FirstBadVersion
+        val res = FirstBadVersion().firstBadVersion(7)
         println("😀😀 ============> $res")
     }
 }
